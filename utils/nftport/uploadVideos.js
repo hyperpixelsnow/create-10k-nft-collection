@@ -12,7 +12,7 @@ const TIMEOUT = 1000; // Milliseconds. Extend this if needed to wait for each up
 const allMetadata = [];
 
 async function main() {
-  const files = fs.readdirSync(`${basePath}/build/images`);
+  const files = fs.readdirSync(`${basePath}/build/videos`);
   files.sort(function(a, b){
     return a.split(".")[0] - b.split(".")[0];
   });
@@ -20,9 +20,9 @@ async function main() {
     const fileName = path.parse(file).name;
     let jsonFile = fs.readFileSync(`${basePath}/build/json/${fileName}.json`);
     let metaData = JSON.parse(jsonFile);
-    if(!metaData.file_url.includes('https://')) {
+    if(!metaData.animation_url.includes('https://')) {
       const response = await fetchWithRetry(file);
-      metaData.file_url = response.ipfs_url;
+      metaData.animation_url = response.ipfs_url;
   
       fs.writeFileSync(
         `${basePath}/build/json/${fileName}.json`,
@@ -49,12 +49,13 @@ function timer(ms) {
   return new Promise(res => setTimeout(res, ms));
 }
 
+
 async function fetchWithRetry(file)  {
   await timer(TIMEOUT)
   return new Promise((resolve, reject) => {
     const fetch_retry = (_file) => {
       const formData = new FormData();
-      const fileStream = fs.createReadStream(`${basePath}/build/images/${_file}`);
+      const fileStream = fs.createReadStream(`${basePath}/build/videos/${_file}`);
       formData.append("file", fileStream);
 
       let url = "https://api.nftport.xyz/v0/files";

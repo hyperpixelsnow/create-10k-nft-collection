@@ -1,0 +1,29 @@
+{
+    "name": "Hypercells #4",
+    "description": "A red cube with a side length of 5 voxels warped with a random combination of multicolored voxel birth-death rules for voxels with 26 three-dimensional Moore neighbors",
+    "animation_url": "ipfs://NewUriToReplace/4.mp4",
+    "file_url": "ipfs://NewUriToReplace/4.gif",
+    "custom_fields": {
+        "edition": 4,
+        "compiler": "Hyperpixels Art Engine"
+    },
+    "external_url": "https://hypercells.herokuapp.com",
+    "attributes": [
+        {
+            "trait_type": "core",
+            "value": "cube"
+        },
+        {
+            "trait_type": "length",
+            "value": 5
+        },
+        {
+            "trait_type": "core color",
+            "value": "red"
+        },
+        {
+            "trait_type": "void probability",
+            "value": 0.3231707317073171
+        }
+    ]
+}

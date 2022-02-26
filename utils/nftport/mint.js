@@ -2,11 +2,13 @@ const fetch = require("node-fetch");
 const path = require("path");
 const basePath = process.cwd();
 const fs = require("fs");
+const { ACCOUNT_DETAILS } = require(`${basePath}/constants/account_details.js`);
 
-const AUTH = 'YOUR API KEY HERE';
-const CONTRACT_ADDRESS = 'YOUR CONTRACT ADDRESS HERE';
-const MINT_TO_ADDRESS = 'YOUR WALLET ADDRESS HERE';
-const CHAIN = 'rinkeby';
+const AUTH = ACCOUNT_DETAILS.auth;
+const CONTRACT_ADDRESS = ACCOUNT_DETAILS.contract_address;
+const MINT_TO_ADDRESS = ACCOUNT_DETAILS.mint_to_address;
+const CHAIN = ACCOUNT_DETAILS.chain;
+
 const TIMEOUT = 1000; // Milliseconds. This a timeout for errors only. If there is an error, it will wait then try again. 5000 = 5 seconds.
 
 if (!fs.existsSync(path.join(`${basePath}/build`, "/minted"))) {
@@ -37,7 +39,9 @@ async function main() {
           mintData: mintData
         }
         writeMintData(meta.custom_fields.edition, combinedData)
-        console.log(`Minted: ${meta.name}!`);
+        // console.log(`Minted: ${meta.name}!`);
+        console.log(`Minted: ${json.transaction_external_url}!`);
+
       } catch(err) {
         console.log(`Catch: ${err}`)
       }

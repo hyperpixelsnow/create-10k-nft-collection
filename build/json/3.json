@@ -1,0 +1,29 @@
+{
+    "name": "Hypercells #3",
+    "description": "A red monkey with a solid volume of 485 voxels warped with a random combination of multicolored voxel birth-death rules for voxels with 26 three-dimensional Moore neighbors",
+    "animation_url": "ipfs://NewUriToReplace/3.mp4",
+    "file_url": "ipfs://NewUriToReplace/3.gif",
+    "custom_fields": {
+        "edition": 3,
+        "compiler": "Hyperpixels Art Engine"
+    },
+    "external_url": "https://hypercells.herokuapp.com",
+    "attributes": [
+        {
+            "trait_type": "core",
+            "value": "monkey"
+        },
+        {
+            "trait_type": "core volume",
+            "value": 485
+        },
+        {
+            "trait_type": "core color",
+            "value": "red"
+        },
+        {
+            "trait_type": "void probability",
+            "value": 0.610062893081761
+        }
+    ]
+}

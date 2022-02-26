@@ -1,0 +1,29 @@
+{
+    "name": "Hypercells #6",
+    "description": "A blue sphere with a radius of 9.0 voxels warped with a random combination of multicolored voxel birth-death rules for voxels with 26 three-dimensional Moore neighbors",
+    "animation_url": "ipfs://NewUriToReplace/6.mp4",
+    "file_url": "ipfs://NewUriToReplace/6.gif",
+    "custom_fields": {
+        "edition": 6,
+        "compiler": "Hyperpixels Art Engine"
+    },
+    "external_url": "https://hypercells.herokuapp.com",
+    "attributes": [
+        {
+            "trait_type": "core",
+            "value": "sphere"
+        },
+        {
+            "trait_type": "radius",
+            "value": 9
+        },
+        {
+            "trait_type": "core color",
+            "value": "blue"
+        },
+        {
+            "trait_type": "void probability",
+            "value": 0.28761061946902655
+        }
+    ]
+}
