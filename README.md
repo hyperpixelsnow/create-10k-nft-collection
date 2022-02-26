@@ -14,16 +14,19 @@ Join the Discord server for more help from the community: [codeSTACKr Discord](h
 
 The macro script from the second video: [macro1.mmmacro](macro1.mmmacro)
 
-# HYPERPIXELS FORK -- Video NFTs for Hypercells NFT project
+# HYPERPIXELS FORK: Video NFTs for Hypercells NFT project
+
+NFT artwork must be added to the build/ directory. In build/json/ are some templates for the structure of .json files taken from 
+some randomly-generated samples using the algorithm/engine from our [Hypercells NFT Project](https://hypercells.herokuapp.com/ "coming soon!")
 
 execution:
-in this directory:
 ```ruby
 npm install i form-data node-fetch path
 
-node utils/nftport/uploadFiles.js; node utils/nftport/uploadVideos.js; node utils/nftport/uploadVideos.js; no
+node utils/nftport/uploadFiles.js; node utils/nftport/uploadVideos.js; node utils/nftport/uploadMetas.js; no
 de utils/nftport/mint.js
 ```
+if using rinkeby chain, go to https://testnets.opensea.io to see the minted work.
 
 ## UPDATES & FIXES
 
