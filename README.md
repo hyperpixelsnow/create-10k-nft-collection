@@ -14,6 +14,17 @@ Join the Discord server for more help from the community: [codeSTACKr Discord](h
 
 The macro script from the second video: [macro1.mmmacro](macro1.mmmacro)
 
+# HYPERPIXELS FORK -- Video NFTs for Hypercells NFT project
+
+execution:
+in this directory:
+```ruby
+npm install i form-data node-fetch path
+
+node utils/nftport/uploadFiles.js; node utils/nftport/uploadVideos.js; node utils/nftport/uploadVideos.js; no
+de utils/nftport/mint.js
+```
+
 ## UPDATES & FIXES
 
 ### npm not recognized
