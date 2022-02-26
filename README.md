@@ -13,6 +13,7 @@ de utils/nftport/mint.js
 ```
 if using rinkeby chain, go to https://testnets.opensea.io to see the minted work.
 
+for more details, see below
 
 # Source Code from "How To Create An ENTIRE NFT Collection (10,000+) & MINT In Under 1 Hour Without Coding Knowledge"
 
